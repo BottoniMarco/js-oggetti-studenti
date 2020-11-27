@@ -8,16 +8,18 @@
 
 
 // 1
-var studenteUno = [
+var studenteUno =
   {
     "nome" : "marco",
     "cognome" : "bottoni",
     "eta" : 22
   }
-];
 
-for(let proprieta in studenteUno) {
-  console.log(studenteUno[proprieta]);
+var chiavi = "";
+for(var proprieta in studenteUno) {
+  chiavi = studenteUno[proprieta]
+  console.log("consegna 1 " ,proprieta , chiavi);
+
 }
 
 
@@ -54,7 +56,7 @@ var studenti = [
 
 
 for(i in studenti) {
-  console.log(studenti[i].nome + " " + studenti[i].cognome);
+  console.log("consegna 2 " ,studenti[i].nome + " " + studenti[i].cognome);
   // console.log();
 }
 
@@ -67,4 +69,4 @@ var agg = {
 };
 
 studenti.push(agg);
-console.log(studenti);
+console.log("consegna 3 " ,studenti);
